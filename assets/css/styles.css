@@ -143,7 +143,6 @@ hire-btn {
 
 .project-row:hover {
   box-shadow: 0 0 40px rgb(26,32,36);
-  transform: scale(1.01);
 }
 
 .project-row iframe, .project-row img {
