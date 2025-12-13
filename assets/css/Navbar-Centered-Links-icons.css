@@ -72,3 +72,46 @@ transparency.navbar {
 transparency {
 }
 
+.logo-slider {
+  width: 100%;
+  overflow: hidden;
+  background: rgba(0,0,0,0.2);
+  padding: 20px 0;
+  position: relative;
+}
+
+.logo-track {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  animation: slideLogos 30s linear infinite;
+}
+
+.logo-item {
+  height: 70px;
+  width: auto;
+  cursor: pointer;
+  filter: brightness(0.8);
+  transition: 0.2s ease;
+}
+
+.logo-item:hover {
+  filter: brightness(1);
+  transform: scale(1.05);
+}
+
+/* Autoscroll Animation */
+
+@keyframes slideLogos {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.logo-slider {
+  align-items: center;
+}
+
